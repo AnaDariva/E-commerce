@@ -1,0 +1,177 @@
+
+[
+    {
+        "id": 1,
+        "name": "LANCÔME IDÔLE NECTAR",
+        "image": "../images/idole.avif",
+        "thumbnails": [
+            "../images/idole4.webp",
+            "../images/idole3.webp",
+            "../images/idole2.webp"
+        ],
+        "price": 120.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "description": "Idôle L'Eau de Parfum Nectar is an old factory treat, a reinvention of the sweet and floral fragrance. A unique, avant-garde scent wich marries a faceted rose bouquet with a sweet blast of popcorn deliciousness, Idôle Nectar cannot be ignored, and rather is meant to stand out. With sustainably sourced ingredients like the Isparta Rose and Bourbon Vanilla, this attention grabbing fragrance stands for the  future of perfumery and of our planet."        
+    },
+
+    {
+        "id": 2,
+        "name": "LIBRE YVES SAINT LAURENT",
+        "price": 120.00,
+        "reviews": 400,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/libre1.avif",
+            "../images/libre2.avif",
+            "../images/libre3.avif"
+        ],
+        "image": "../images/libre.webp",
+        "description": "Libre Eau de Parfum is a bold and elegant fragrance that personifies freedom. Ideal for women who want to express their strong and independent personality, this perfume is the perfect choice for many occasions. The olfactory notes of Libre Eau de Parfum The fiery sensuality of the noble orange blossom from Morocco contrasts with the aromatic freshness of the heart of Diva lavender sustainably sourced in France, revealing with each spray the maximum emotion that these precious materials can express. In the top notes, Tangerine, Lavender, Cassis or Black Currant and Petitgrain bring the freshness and vivacity of the fragrance. In the heart, Jasmine, Lavender and Orange Blossom bring a bold, cheerful and floral mix to the composition. Finally, Madagascar Vanilla, Cedar, Ambergris and Musk complete this unique and sophisticated perfume."
+    },
+    {
+        "id": 3,
+        "name": "MISS DIOR",
+        "price": 100.0,
+        "reviews": 1002,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/missdior1.avif",
+            "../images/missdior2.webp",
+            "../images/missdior3.webp"
+        ],
+        "image": "../images/missDior.webp",
+        "description": "The new Miss Dior eau de parfum is full of life, capturing the eternally optimistic essence of Miss Dior. The fragrance shines with fresh floral notes similar to a dazzling bouquet of countless flowers in countless colors. François Demachy, Perfumer-Creator at Maison Dior, sought to create a fragrance with an iridescent Rose illuminated by multiple fresh and floral notes."
+    },
+    {
+        "id": 4,
+        "name": "J'ADORE DIOR",
+        "price": 110.80,
+        "reviews": 2000,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/jadore1.avif",
+            "../images/jadore2.webp",
+            "../images/jadore3.webp"
+        ],
+        "image": "../images/j-adore-eau-de-parfum-dior-perfume-feminino-30ml--1-.webp",
+        "description": "J'adore eau de parfum is Dior's great floral fragrance for women. A bouquet finely crafted down to the last detail, like a custom-made flower. The essence of ylang-ylang, with its floral and fruity notes, and the essence of Damask Rose from Turkey, mix with a rare duo of Jasmine Grandiflorum from Grasse and Indian Sambac Jasmine with fruity and voluptuous sensuality. The J'adore Dior bottle is as feminine as its fragrance. Occupying the sensual curves of the legendary amphora created by Christian Dior, it is adorned with the famous Maasai necklace, like a jewel dancing on a woman's neck. J'adore is an extraordinary fragrance, because it manages to seduce effortlessly and with an original signature. Carnal, but not arrogant. This is a composition that unites contrasts, transforming iconic floral notes into an attractive, unprecedented and mysterious set. J'adore invents a flower that doesn't exist. - François Demachy, perfumer-creator of Dior."
+    },
+    {
+        "id": 5,
+        "name": "FAME PACO RABANNE",
+        "price": 90.99,
+        "reviews": 890,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/pacorabanne2.avif",
+            "../images/pacorabanne2.avif",
+            "../images/pacorabanne3.avif"
+        ],
+        "image": "../images/fame-paco-rabanne-perfume-feminino-eau-de-parfum--1-.webp",
+        "description": "Rabanne Fame Intense is a sensory explosion that combines contrasting elements to create an unforgettable olfactory experience: The fragrance opens with top notes that feature a vibrant blend of coconut water and bergamot, creating a fruity and smooth start that awakens the senses. At the heart of the fragrance, the floral seduction of jasmine mixes with ylang ylang and the trio of incense, giving an intense and enveloping femininity. Finally, the base notes reveal a warm and deep base of sandalwood, musk and cedar, providing a lasting and unforgettable trail."
+    },
+    {
+        "id": 6,
+        "name": "BURBERRY GODDESS",
+        "price": 99.99,
+        "reviews": 790,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/burberry1.avif",
+            "../images/burberry2.avif",
+            "../images/burberry3.jpeg"
+        ],
+        "image": "../images/burberry.avif",
+        "description": "The power within. Burberry Goddess Eau de Parfum is a story of self-discovery, found through confidence, strength and kindness. With an elegant design, Burberry Goddess Eau de Parfum is Burberry's first refillable perfume. It is a unique, aromatic gourmand fragrance, led by a powerful trio of vanillas, enriched with luminous lavender. Refill sold separately."
+    },
+
+    {
+        "id": 7,
+        "name": "MARC JACOBS",
+        "price": 120.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/marcjacobs1.avif",
+            "../images/marcjacobs2.avif",
+            "../images/marcjacobs3.avif"
+        ],
+        "image": "../images/MarcJacobsPerfume.avif",
+        "description": "Embark on an outdoor adventure with Marc Jacobs Daisy Wild, a bold and feminine fragrance for women. Jasmine, vetiver and banana flower notes capture the irresistible essence of nature, awakening a sense of discovery. The new refillable Eau de Parfum exudes a fresh fragrance reminiscent of a bouquet of wildflowers. It inspires you to reconnect with nature and embody your young, free-spirited self"
+    },
+    
+    {
+        "id": 8,
+        "name": "SISLEY IZIA LA NUIT",
+        "price": 500.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/sisley1.webp",
+            "../images/sisley2.webp",
+            "../images/sisley3.webp"
+        ],
+        "image": "../images/sisley.avif",
+        "description": "Izia La Nuit is an olfactory journey with a chypre, woody and floral trail as intense as the memory of a romantic encounter. Inspiration Izia La Nuit is a fragrance for a bold and elegant woman who is looking for an olfactory signature that reveals her a little, but not completely. An extraordinary, rare and sophisticated perfume. This nocturnal, opulent and deep fragrance is like an encounter that awakens the unconscious and stimulates the senses. A dizzying array of sensual, full and radiant notes emerge, developing and evolving over time like a metaphor."
+    },
+
+    {
+        "id": 9,
+        "name": "BOUCHERON LA COLLECTION ROSE D'ISPARTA",
+        "price": 550.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/boucheron.avif",
+            "../images/boucheron2.webp",
+            "../images/boucheron3.webp"
+        ],
+        "image": "../images/boucheron.avif",
+        "description": "A place of discovery where the collection line grows with yet another olfactory memory. A new destination will join the Boucheron Collection. Still on the trail of the stone hunters, an unexplored region. Gem hunters are enveloped by Türkiye's open plains. Attracted by the richness of its minerals and expanses of flowers, stone hunters are captivated by the plains once again.  In the Turkish mountains of Isparta grows the noblest and rarest ingredient in selective perfumery: the Turkish rose. Very coveted, its petals have the translucency of rose quartz, their shine is matched only by this organic jewel. Magnificent raw material A fragrance that showcases the charming planting of Turkish roses from Isparta, harvested at dawn when half of flowering and their perfume are most intense. The essence of Turkish rose releases a floral aroma with a spicy green character, characteristic of the rose. Between 4 and 5 tons are needed to produce just 1 kg of this essence. Each bottle in the collection contains more than 300 roses!"
+    },
+    {
+        "id": 10,
+        "name": "TOM FORD VANILLA SEX",
+        "price": 600.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/tomford1.avif",
+            "../images/tomford2.webp",
+            "../images/tomford3.jpeg"
+        ],
+        "image": "../images/tomford.avif",
+        "description": "Vanilla, one of the most sought after ingredients in modern perfumery, takes on a far from ordinary role in VANILLA SEX. Addictive by nature, glamorous by formulation, a captivating interplay of vanilla notes, deep and radiant, shine in VANILLA SEX. An unforgettable experience, the VAINILLA SEX perfume is an icon of sensual pleasure that is far from innocent. The VANILLA SEX fragrance is presented in a Private Blend bottle, with a cream-colored inner lacquer and a honey-colored outer layer. Finished with a caramel-toned plate, the 50ml bottle and 250ml decanter are extravagant monuments to any area of ​​beauty."
+    },
+    {
+        "id": 11,
+        "name": "DOLCE&GABBANA DEVOTION INTENSE",
+        "price": 580.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/dolcegabbana1.avif",
+            "../images/dolcegabbana.avif",
+            "../images/dolcegabbana1.avif"
+        ],
+        "image": "../images/dolcegabbana.avif",
+        "description": "Dolce&Gabbana Devotion Eau de Parfum Intense is a stunning tribute to the brand's rich heritage of Italian design and craftsmanship. The vibrant amber-hued glass bottle, adorned with the iconic Sacred Heart, captures the essence of devotion and passion that define the fragrance. This exquisite design not only serves as a visual masterpiece but also embodies the deep emotional connection associated with love and dedication. The intense fragrance promises to evoke a powerful and lasting impression, making it a true statement piece in any perfume collection."
+    },
+    {
+        "id": 12,
+        "name": "CAROLOINA HERRERA CONFIDENTIAL AMBER DESIRE",
+        "price": 650.00,
+        "reviews": 320,
+        "sizes": [30, 50, 100],
+        "thumbnails": [
+            "../images/carolinaherrera1.avif",
+            "../images/carolinaherrera2.avif",
+            "../images/carolinaherrera3.avif"
+        ],
+        "image": "../images/carolinaherrera.avif",
+        "description": "Carolina Herrera de Baez, inspired by her mother's values, brought to life a project that embodies her curiosity about the world of fragrances, her desire for experimentation and her quest for perfection. The dream of this distinctive collection was created through the quality and purity of the product and the impeccable presentation. Designed in exquisite bottles embellished with bold jewel tones, Herrera Confidential presents the most iconic imported women's perfumes in modern perfumery. A combination of elegance, authenticity and luxury, Herrera Confidential is composed of seven feminine Eau de Parfum fragrances, six Eau de Toilette, four essential oils and 2 Elixirs, which can be used individually or mixed together to create your own personal fragrance."
+    }
+
+]
+

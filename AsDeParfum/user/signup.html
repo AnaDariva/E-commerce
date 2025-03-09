@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <div id="header-container"></div>
+
+  <div class="signup-container">
+    <a href="#" id="continue-shopping" class="back-link" style="color: black">&larr; Continue Shopping</a>
+    <h1>Sign Up</h1>
+
+    <form id="signup-form">
+      <div class="input-group">
+        <label for="first-name">First Name*</label>
+        <input type="text" id="first-name">
+        <div class="error-message" id="error-first-name"></div>
+      </div>
+      <div class="input-group">
+        <label for="last-name">Last Name*</label>
+        <input type="text" id="last-name">
+        <div class="error-message" id="error-last-name"></div>
+      </div>
+      <div class="input-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email">
+        <div class="error-message" id="error-email"></div>
+      </div>
+      <div class="input-group">
+        <label for="password">Password*</label>
+        <input type="password" id="password">
+        <div class="error-message" id="error-password"></div>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password*</label>
+        <input type="password" id="confirm-password">
+        <div class="error-message" id="error-confirm-password"></div>
+      </div>
+
+      <div class="options">
+        <label>
+          <input type="checkbox" id="terms">
+          By submitting this form, I agree to create an account and join A’s de Parfum and (1) agree to Terms of Use
+        </label>
+        <div class="error-message" id="error-terms"></div>
+      </div>
+
+      <button type="submit" class="btn">SAVE</button>
+    </form>
+
+    <div class="social-signup">
+      <p>SIGN UP IN ONE CLICK</p>
+      <button class="google">Google</button>
+      <button class="facebook">Facebook</button>
+    </div>
+
+    <div id="signin">
+      <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script type="module" src="../script.js"></script>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      let isValid = true;
+
+      document.querySelectorAll('.error-message').forEach(msg => msg.textContent = "");
+
+      const fields = [
+        { id: 'first-name', message: 'First Name is required' },
+        { id: 'last-name', message: 'Last Name is required' },
+        { id: 'password', message: 'Password is required' }
+      ];
+
+      fields.forEach(field => {
+        const input = document.getElementById(field.id);
+        if (!input.value.trim()) {
+          showError(field.id, field.message);
+          isValid = false;
+        }
+      });
+
+      // Validacao do email com Regex
+      const emailInput = document.getElementById('email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value)) {
+        showError('email', 'Please enter a valid email address');
+        isValid = false;
+      }
+
+      const passwordInput = document.getElementById('password');
+      const confirmPasswordInput = document.getElementById('confirm-password');
+      if (confirmPasswordInput.value !== passwordInput.value || !confirmPasswordInput.value) {
+        showError('confirm-password', 'Passwords do not match');
+        isValid = false;
+      }
+
+      if (!document.getElementById('terms').checked) {
+        showError('terms', 'You must agree to the Terms of Use');
+        isValid = false;
+      }
+
+      if (isValid) {
+        alert('New account created successfully!');
+        window.location.href = "../index.html"; 
+
+    
+      }
+    });
+
+    function showError(inputId, message) {
+      document.getElementById(`error-${inputId}`).textContent = message;
+    }
+
+    document.getElementById('signin').addEventListener('click', function (event) {
+      event.preventDefault();
+      window.location.href = '../user/login.html';
+    });
+  </script>
+</body>
+
+</html>

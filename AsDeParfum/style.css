@@ -1,0 +1,641 @@
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  color: #333;
+  padding-top: 75px;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #8d7b64;
+  border-bottom: 1px solid #6d604ebd;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+/* NAVEGAÇÃO */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* SEARCH-BAR */
+.search-bar {
+  display: flex;
+  align-items: center; /* Garante que os itens fiquem alinhados verticalmente */
+  gap: 10px; /* Reduz o espaço entre os elementos */
+  padding: 10px;
+}
+
+/* INPUT DA BARRA DE PESQUISA */
+.search-input {
+  width: 180px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* BOTÃO DE PESQUISA */
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8d7b64bd;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* ALINHAMENTO DOS ÍCONES */
+.cart-icon, .user-icon {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center;
+}
+
+.cart-icon a, .user-icon a {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon i, .user-icon i {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 87vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .hero-text {
+  position: absolute;
+  bottom: 13%;
+  left: 80%;
+  text-align: center;
+}
+
+.hero #shopNow {
+  background-color: #f4a361f7; 
+  font-size: 22px; 
+  width: 150px; 
+  height: auto; 
+  padding: 10px 25px; /* Ajustando o padding lateral e superior/inferior */
+  color: white;
+  cursor: pointer;
+  border-radius: 10px; 
+  text-transform: uppercase; 
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+.hero #shopNow:hover {
+  background-color: #e76f51; /* Cor mais escura ao passar o mouse */
+  transform: translateY(-5px); /* Efeito de "levitação" */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Aumentando a sombra */
+}
+
+
+
+.hero button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.hero .prev {
+  left: 10px;
+  
+}
+
+.hero .next {
+  right: 10px;
+}
+
+.hero button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Best Sellers Section */
+.best-sellers {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.best-sellers h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.products .prev {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  left: 10px;
+}
+
+.products .next {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+  right: 10px;
+}
+
+.products button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Highlights Section */
+.highlights {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.highlights h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.products .prev {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  left: 10px;
+}
+
+.products .next {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+  right: 10px;
+}
+
+.products button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Search by Brand Section */
+.search-by-brand {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4ece7;
+}
+
+.search-by-brand h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.brand-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.brand-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Gender Types */
+.genders-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #f4ece7;
+}
+
+.gender {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.gender img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+.genders-types .gender a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.genders-types .gender a:hover img {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* New Collection Section */
+.new-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f4ece7;
+}
+
+.collection-item {
+  max-width: 400px;
+}
+
+.collection-item h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.collection-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.collection-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.learn-more {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #8d7b64;
+  color: white;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+
+
+.add-to-cart {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+
+}
+
+
+.add-to-cart:hover {
+  background-color: #555;
+}
+
+#header-container, #footer-container {
+  display: block !important;
+}
+
+/* RESPONSIVIDADE PARA MOBILE (max-width 600px) */
+@media only screen and (max-width: 600px) {
+
+
+  /* Hero Section */
+  .hero {
+    height: 300px;
+    width: 600px;
+    
+  }
+  .hero img {
+    width: 900px;
+    height: 100%;
+    object-fit: cover; 
+    box-sizing: border-box;/* Adicionado para cobrir o espaço */
+}
+  .hero .hero-text {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .hero #shopNow {
+    font-size: 18px;
+    padding: 8px 20px;
+    width: auto;
+  }
+
+  .hero button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  /* Best Sellers e Highlights Sections */
+  .products {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .product {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .product img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+  .products .prev {
+    position: relative;
+    top: 50%;
+    font-size: 15px;
+    border-radius: 50%;
+    left: 10px;
+  }
+
+  .products .next {
+    position: relative;
+    top: 50%;
+    font-size: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    right: 10px;
+  }
+
+  .product button {
+    display: flex; /* Adicionar display flex */
+    align-items: center; /* Alinhar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    font-size: 10px;
+    width: 100px;
+    margin: 5px auto; /* Adicionar margem para centralizar */
+}
+
+  /* Search by Brand Section */
+  .search-by-brand {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 100px;
+    background: none;
+  }
+
+  .brand-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .brand-card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Gender Types */
+  .genders-types {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 30px 10px;
+    background: none;
+    margin: 0 100px;
+
+  }
+
+  .gender img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* New Collection */
+  .new-collection {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background: none;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  .collection-item {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .collection-image {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    height: 200px;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+
+
+  .header {
+    align-items: center;
+    padding: 8px;
+    width: 100%;;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+    padding: 6px;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    margin: 0 2px;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  /* SEARCH-BAR */
+  .search-bar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1px;
+  }
+
+  /* INPUT DA BARRA DE PESQUISA */
+  .search-input {
+    width: 30%;
+    padding: 3px;
+    font-size: 10px;
+    margin: 0 5px;
+    margin-left: 7px;
+  }
+
+  .search-button {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  /* ALINHAMENTO DOS ÍCONES */
+  .cart-icon {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  #user-icon {
+    padding: 2px;
+    font-size: 10px;
+  }
+
+  .cart-icon i {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .user-icon i {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  #all-categories {
+    min-width: 65px;
+  }
+
+  .footer {
+    width: 100%;
+    font-size: 10px;
+    padding: 20px 100px;
+    gap: 20px
+  }
+}
+
+

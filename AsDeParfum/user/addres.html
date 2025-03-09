@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Address</title>
+  <link rel="stylesheet" href="address.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <div id="header-container"></div>
+
+  <div class="address-container">
+    <h1>New Address</h1>
+    <form id="address-form">
+      <div class="input-group">
+        <label for="zip-code">ZIP Code*</label>
+        <input type="text" id="zip-code" >
+        <span id="errorZipCode" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="address">Address*</label>
+        <input type="text" id="address" >
+        <span id="errorAddress" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="number">Number*</label>
+        <input type="number" id="number" >
+        <span id="errorNumber" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="complement">Complement</label>
+        <input type="text" id="complement">
+        <span id="errorComplement" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="neighbourhood">Neighbourhood*</label>
+        <input type="text" id="neighbourhood" >
+        <span id="errorNeighbourhood" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="city">City*</label>
+        <input type="text" id="city" >
+        <span id="errorCity" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="state">State*</label>
+        <input type="text" id="state" >
+        <span id="errorState" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <label for="reference">Reference</label>
+        <input type="text" id="reference">
+        <span id="erroreference" class="error-message"></span>
+      </div>
+
+      <button id="save" type="submit">SAVE</button>
+    </form>
+
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script type="module" src="../script.js"></script>
+>
+
+  <script>
+    function mandotoryCamp(input, errorElement, message) {
+      if (input.value.trim() === "") {
+        errorElement.textContent = message;
+        errorElement.style.display = "block";
+        input.classList.add("input-error");
+        return false;
+      }
+      errorElement.textContent = "";
+      errorElement.style.display = "none";
+      input.classList.remove("input-error");
+      return true;
+    }
+
+    // Validação do ZIP Code com formato válido ( 12345 ou 12345-678)
+    function validateZipCode(zipCode, errorElement) {
+      const regex = /^[0-9]{5}(-[0-9]{3})?$/;
+      if (!regex.test(zipCode.value.trim())) {
+        errorElement.textContent = "Invalid ZIP Code. Use the format 12345 or 12345-6789.";
+        errorElement.style.display = "block";
+        zipCode.classList.add("input-error");
+        return false;
+      }
+      errorElement.textContent = "";
+      errorElement.style.display = "none";
+      zipCode.classList.remove("input-error");
+      return true;
+    }
+
+    document.getElementById("address-form").addEventListener("submit", function (event) {
+      let zipCode = document.getElementById("zip-code");
+      let address = document.getElementById("address");
+      let number = document.getElementById("number");
+      let neighbourhood = document.getElementById("neighbourhood");
+      let city = document.getElementById("city");
+      let state = document.getElementById("state");
+
+      let errorZipCode = document.getElementById("errorZipCode");
+      let errorAddress = document.getElementById("errorAddress");
+      let errorNumber = document.getElementById("errorNumber");
+      let errorNeighbourhood = document.getElementById("errorNeighbourhood");
+      let errorCity = document.getElementById("errorCity");
+      let errorState = document.getElementById("errorState");
+
+      // Valida os campos obrigatórios
+      let validZipCode = validateZipCode(zipCode, errorZipCode);
+      let validAddress = mandotoryCamp(address, errorAddress, "Addres is required.");
+      let validNumber = mandotoryCamp(number, errorNumber, "Number is required.");
+      let validNeighbourhood = mandotoryCamp(neighbourhood, errorNeighbourhood, "Neighbourhood is required.");
+      let validCity = mandotoryCamp(city, errorCity, "City is required");
+      let validState = mandotoryCamp(state, errorState, "State is required.");
+
+      // naao deixa o formulário se algum campo obrigatório não estiver preenchido ou o ZIP Code for invalido
+      if (!validZipCode || !validAddress || !validNumber || !validNeighbourhood || !validCity || !validState) {
+        event.preventDefault();
+      } else {
+        window.location.href = '../cart/cart.html';
+      }
+    });
+  </script>
+</body>
+
+</html>

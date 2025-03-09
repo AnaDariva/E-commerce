@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="header-container"></div>
+
+    <div class="cart-container">
+        <div class="cart-left">
+            <!--continue shopping -->
+            <a href="#" id="continue-shopping" class="back-link" style="color: black">&larr; Continue Shopping</a>
+            <h1>Shopping Cart</h1>
+            <p>You have <span id="item-quantity">0</span> items in your cart</p>
+            
+            <div id="cart-container"></div>
+
+            <div class="cart-total">
+        
+                <p id="subtotal"></p>
+                <p id="discounts">Discounts: $0</p>
+                <p id="total"></p>
+            </div>
+
+        </div>
+
+        <div class="cart-right">
+            <h1>Card Details</h1>
+            <form>
+                <div class="form-group">
+                    <label for="card-type">Card Type</label>
+                    <div class="card-types">
+                        <a href="#visa"><i class="fa-brands fa-cc-visa" style="color: #ffff"></i></a>
+                        <a href="#mastercad"><i class="fa-brands fa-cc-mastercard" style="color: #ffff"></i></a>
+                        <a href="#creditcard"><i class="fa-regular fa-credit-card" style="color: #ffff"></i></a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="**** **** **** ****">
+                </div>
+                <div class="form-group">
+                    <label for="expiration">Expiration Date</label>
+                    <input type="text" id="expiration" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123">
+                </div>
+                <div class="address">
+                    <h1>ZIP Code</h1>
+                    <input type="text" placeholder="00000-0000">
+                    <a href="#" id="edit-address" style="color: white"> Edit</a>
+                </div>
+                <div class="price-summary">
+                    <p id="summary-subtotal">Subtotal: $0</p>
+                    <p>Shipping: $5.00</p>
+                    <p><strong id="summary-total">Total (Tax incl.): $5.00</strong></p>
+                </div> 
+                <button id="checkout">Checkout</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+
+
+    <script type="module" src="../cart.js"></script>
+
+</body>
+
+</html>
