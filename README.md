@@ -37,7 +37,7 @@ Este projeto consiste em um **e-commerce de perfumes**, desenvolvido utilizando 
 - **CSS3** - Estilização e layout  
 - **Bootstrap** - Framework para design responsivo  
 - **JavaScript** - Manipulação de dados e interatividade  
-- **LocalStorage** - Armazenamento temporário de dados do carrinho  
+- **LocalStorage** - Armazenamento temporário de dados do carrinho
 
 ---
 
@@ -88,7 +88,7 @@ Este projeto consiste em um **e-commerce de perfumes**, desenvolvido utilizando 
 
 ---
 
-## 📌 Como Executar o Projeto
+## 📌 Como Executar o projeto
 1. Faça o **download** ou clone este repositório:  
    ```sh
    git clone https://github.com/seu-usuario/ecommerce-perfumes.git
