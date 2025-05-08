@@ -1,5 +1,5 @@
 # E-commerce  
-**Loja de perfumes online para aula de Linguagens De Apresentação E Estruturação De Conteúdo.**   
+**Loja de perfumes online para aula de Linguagens De Apresentação E Estruturação De Conteúdo**   
 
 <h2 align="left"> Language: </h2>
 <p align="left">
