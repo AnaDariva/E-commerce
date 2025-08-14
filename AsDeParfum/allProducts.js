@@ -75,3 +75,4 @@ function showNotification(product) {
       notification.remove();
   }, 5000);
 }
+
