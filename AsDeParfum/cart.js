@@ -173,3 +173,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 console.log(document.getElementById("cart-container"));
 console.log("Carrinho salvo no localStorage:", localStorage.getItem("cart"));
+
