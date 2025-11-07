@@ -28,3 +28,4 @@ import("./components/footer.js")
     })
     .catch(error => console.error("Erro ao carregar footer.js:", error));
 });
+
