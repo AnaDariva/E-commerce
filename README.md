@@ -94,5 +94,4 @@ Este projeto consiste em um **e-commerce de perfumes**, desenvolvido utilizando 
    git clone https://github.com/seu-usuario/ecommerce-perfumes.git
 
 ## 👩‍💻 Autores
-- **Adriana Dantas Marotti** - Acadêmica de Análise e Desenvolvimento de Sistemas na UTFPR-PB 
 - **Ana Luisa Dariva Ramos** - Acadêmica de Análise e Desenvolvimento de Sistemas na UTFPR-PB   
