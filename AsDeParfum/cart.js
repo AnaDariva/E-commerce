@@ -3,7 +3,7 @@ import { Footer } from "./components/footer.js";
 
 console.log("cart.js foi carregado"); 
 
-//.? optional chaining 
+
 document.getElementById('checkout')?.addEventListener('click', function (event) {
   event.preventDefault();
   window.location.href = '../user/login.html';
