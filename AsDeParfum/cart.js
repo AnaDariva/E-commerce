@@ -3,13 +3,11 @@ import { Footer } from "./components/footer.js";
 
 console.log("cart.js foi carregado"); 
 
-
 document.getElementById('checkout')?.addEventListener('click', function (event) {
   event.preventDefault();
   window.location.href = '../user/login.html';
 });
 
-//ir para o carrinho ao clicar no icone cart
 
 document.getElementById('edit-address')?.addEventListener('click', function (event) {
   event.preventDefault();
@@ -20,10 +18,6 @@ document.getElementById('continue-shopping')?.addEventListener('click', function
   window.location.href = '../index.html';
 });
 
-/*event.preventDefault(); 
-• Previne o comportamento padrão do objeto cancelando o comportamento que os objetos, 
-geralmente, tem na página. • Por exemplo: uma tag de link, sempre tentará abrir um novo endereço. 
-Contudo, muitas vezes, um link pode abrir um modal.*/
 document.body.insertAdjacentHTML("afterbegin", Header());
     document.body.insertAdjacentHTML("beforeend", Footer());
 
@@ -35,13 +29,9 @@ function loadCartItems() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   if (!Array.isArray(cart)) {
     localStorage.setItem("cart", JSON.stringify([])); // Corrige se estiver corrompido
-  } //O carrinho de compras é recuperado do localStorage (armazenamento local do navegador). Se não houver nada salvo, a variável cart recebe um array vazio.
-  //O método getItem("cart") pega o valor armazenado com a chave "cart". Como o getItem retorna uma string, utilizamos JSON.parse para transformá-la de volta em um array de objetos. Caso não haja nada no localStorage, o carrinho será um array vazio ([]).
-
+  } 
   console.log("parsed cart: ", cart)
 
-  //agora estamos usando getElementById e atribuindo o id a uma nova variavel, ja que em js nao é permitido variaveis com o mesmo nome
-  //ou seja, os id="" declarados no cart.html estao sendo atribuidos a essas novas para podermos manipular
   const cartContainer = document.getElementById("cart-container");
   const itemQuantity = document.getElementById("item-quantity");
   const subtotalElement = document.getElementById("subtotal");
@@ -49,7 +39,7 @@ function loadCartItems() {
   const summarySubtotal = document.getElementById("summary-subtotal");
   const summaryTotal = document.getElementById("summary-total");
 
-  let subtotal = 0; //inicia o subtotal em zero com let, visto que a cada item adicionado ou excluido essa variavel vai sofrer alteraçoes, nao sendo assim uma const(constante)
+  let subtotal = 0; 
 
   itemQuantity.textContent = cart.reduce((sum, product) => sum + (product.quantity || 0), 0);//Usamos o método reduce para somar a quantidade total de itens no carrinho. 
   // Para cada item (product), adicionamos o valor de product.quantity (quantidade de unidades desse produto) ao sum, e iniciamos a soma com 0.
@@ -72,7 +62,7 @@ function loadCartItems() {
     const productDiv = document.createElement("div"); //uma div é criada e preenchida com as infos do item
     productDiv.classList.add("product");//damos a ela a classe CSS "product" para que o estilo adequado seja aplicado
 
-    subtotal += (parseFloat(product.price) || 0) * (product.quantity || 0); //guarda na variavel 'subtotal' a conta usando ParseFloat p converter uma string para float e faz * a quantidade
+    subtotal += (parseFloat(product.price) || 0) * (product.quantity || 0); 
     
     productDiv.innerHTML = `
     <div class="cart-item">
@@ -97,8 +87,6 @@ function loadCartItems() {
   if (summarySubtotal) summarySubtotal.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
   if (summaryTotal) summaryTotal.textContent = `Total (Tax incl.): $${(subtotal + 5).toFixed(2)}`;
 
-  // A funcao loadCartItems adiciona listeners aos botoes de aumentar (increase), diminuir (decrease) e aos campos de quantidade de cada
-  //  item para permitir que o usuário altere a quantidade diretamente.  
   document.querySelectorAll(".increase").forEach((button) => {
     button.addEventListener("click", (event) => updateQuantity(event, 1));
   }); //quando a classe 'increase' feita no html acima for clicada, chama a funçao 'updateQuantity' passando 1 como parametro p aumentar a qtde
